@@ -47,7 +47,7 @@ class CoinsController < ApplicationController
     end
   end
 
-  # DELETE /coins/1 or /coins/1.json
+
   def destroy
     @coin.destroy!
 
