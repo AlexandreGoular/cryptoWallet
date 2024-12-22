@@ -1,0 +1,26 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+
+development:
+  <<: *default
+  database: crypto_wallet_development
+  username: postgres
+  password: bancodedados  # Senha fixa
+  host: localhost  # Host padrão
+
+test:
+  <<: *default
+  database: crypto_wallet_test
+  username: postgres
+  password: bancodedados  # Senha fixa
+  host: localhost  # Host padrão
+
+production:
+  <<: *default
+  database: crypto_wallet
+  username: postgres
+  password: bancodedados  # Senha fixa
+  host: localhost  # Host padrão

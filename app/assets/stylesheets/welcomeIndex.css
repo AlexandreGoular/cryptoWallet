@@ -1,0 +1,8 @@
+.my-class {
+    background-color: orange;
+}
+
+.my-class, h1 {
+    color: white;
+    text-align: center;
+}
