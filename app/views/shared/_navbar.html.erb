@@ -1,0 +1,10 @@
+<%= stylesheet_link_tag 'navbarPartial' %>
+
+<%= content_tag(:div, class: 'nav') do %>
+  <%= content_tag(:h1, 'Crypto Wallet') %>
+  <%= content_tag(:p) do %>
+    <%= link_to 'Criar Moeda', new_coin_path, class: 'links'%>
+    <%= link_to 'Ver Moedas', coins_path, class: 'links' %>
+  <% end %>
+<% end %>
+

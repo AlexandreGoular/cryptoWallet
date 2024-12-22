@@ -1,0 +1,32 @@
+.nav {
+    background-color: #00BFA6;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    height: 70px;
+    margin-top: 30px;
+}
+
+h1 {
+    margin-left: 50px;
+    font-family: inherit;
+}
+
+p {
+    margin-right: 20px; 
+    text-decoration: none;
+    color: white;
+}
+
+.nav, p, .links {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.links {
+    margin-right: 50px;
+}
